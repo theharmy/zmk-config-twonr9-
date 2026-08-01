@@ -378,12 +378,46 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            display-name = "Base";
+        a1 {
             bindings = <
-                        &kp A   &kp B   &kp C                   &kp D &kp E &kp F
-                &kp G   &kp H   &kp I   &kp J                   &kp K &kp L &kp M &kp N
-                                        &kp O   &kp P   &kp Q   &kp R
+                        &hml LEFT_ALT DE_L      &hml LEFT_GUI DE_N      &hml LEFT_SHIFT DE_D    &hmr LEFT_SHIFT DE_Y    &hmr LEFT_GUI DE_O      &hmr LEFT_ALT DE_U      
+&hml LCTRL DE_S         &kp DE_R                &kp DE_H                &lt_r2 4 DE_T           &lt_r2 4 DE_C           &kp DE_E                &kp DE_I                &hmr LCTRL DE_A
+                                                &sl 2                   &sl 1                   &mt LEFT_SHIFT SPACE    &sl 3
+            >;
+        };
+
+        a2 {
+            bindings = <
+                        &hml LEFT_ALT DE_X      &hml LEFT_GUI DE_B      &hml LEFT_SHIFT DE_M    &hmr LEFT_SHIFT DE_W    &hmr LEFT_GUI DE_Q      &hmr LEFT_ALT DE_COMMA  
+&hml LEFT_CONTROL DE_F  &kp DE_V                &kp DE_P                &kp DE_K                &kp DE_G                &kp DE_J                &kp DE_DOT              &hmr LEFT_CONTROL DE_Z
+                                                &trans                  &to 0                   &trans                  &trans
+            >;
+            label = "a2";
+        };
+
+        nav {
+            bindings = <
+                        &sk LALT                &sk LGUI                &sk LSHFT               &kp DOWN                &kp UP                  &kp RIGHT               
+&sk LCTRL               &trans                  &kp PG_UP               &trans                  &kp HOME                &kp PG_DN               &kp END                 &kp LEFT
+                                                &to 4                   &to 0                   &trans                  &to 3
+            >;
+            label = "nav";
+        };
+
+        sym {
+            bindings = <
+                        &kp DE_GRAVE            &kp DE_SQT              &kp DE_DQT              &kp DE_PIPE             &kp DE_EQUAL            &kp DE_CARET            
+&kp DE_EXCL             &kp DE_AT               &kp DE_HASH             &kp DE_DOLLAR           &kp DE_AMPERSAND        &kp DE_ASTERISK         &kp DE_PERCENT          &kp DE_BSLH
+                                                &kp DE_TILDE            &to 0                   &trans                  &trans
+            >;
+            label = "sym";
+        };
+
+        num {
+            bindings = <
+                        &hml LEFT_ALT DE_MINUS  &hml LEFT_GUI DE_ASTRK  &kp DE_EQUAL            &kp DE_N5               &kp DE_N6               &kp DE_N0               
+&hml LCTRL DE_PLUS      &kp DE_PERCENT          &kp DE_PIPE             &kp DE_FSLH             &kp DE_N1               &kp DE_N2               &kp DE_N3               &kp DE_N4
+                                                &trans                  &to 0                   &trans                  &trans
             >;
         };
     };

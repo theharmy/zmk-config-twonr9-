@@ -14,173 +14,173 @@
 
         combo_rl {
             bindings = <&macro_rl>;
-            key-positions = <1 9>;
+            key-positions = <0 7>;
             layers = <0>;
             timeout-ms = <30>;
         };
 
         combo_hn {
             bindings = <&macro_hn>;
-            key-positions = <2 10>;
+            key-positions = <1 8>;
             layers = <0>;
             timeout-ms = <30>;
         };
 
         combo_dt {
             bindings = <&macro_dt>;
-            key-positions = <3 11>;
+            key-positions = <2 9>;
             layers = <0>;
             timeout-ms = <30>;
         };
 
         combo_cy {
             bindings = <&macro_cy>;
-            key-positions = <4 12>;
+            key-positions = <3 10>;
             layers = <0>;
             timeout-ms = <30>;
         };
 
         combo_eo {
             bindings = <&macro_eo>;
-            key-positions = <5 13>;
+            key-positions = <4 11>;
             layers = <0>;
             timeout-ms = <30>;
         };
 
         combo_ui {
             bindings = <&macro_ui>;
-            key-positions = <6 14>;
+            key-positions = <5 12>;
             layers = <0>;
             timeout-ms = <30>;
         };
 
         combo_lr {
             bindings = <&macro_lr>;
-            key-positions = <1 9>;
+            key-positions = <0 7>;
             layers = <1>;
             timeout-ms = <30>;
         };
 
         combo_nb {
             bindings = <&macro_nb>;
-            key-positions = <2 10>;
+            key-positions = <1 8>;
             layers = <1>;
             timeout-ms = <30>;
         };
 
         combo_mt {
             bindings = <&macro_mt>;
-            key-positions = <3 11>;
+            key-positions = <2 9>;
             layers = <1>;
             timeout-ms = <30>;
         };
 
         combo_gy {
             bindings = <&macro_gy>;
-            key-positions = <4 12>;
+            key-positions = <3 10>;
             layers = <1>;
             timeout-ms = <30>;
         };
 
         combo_oe {
             bindings = <&macro_oe>;
-            key-positions = <5 13>;
+            key-positions = <4 11>;
             layers = <1>;
             timeout-ms = <30>;
         };
 
         combo_iu {
             bindings = <&macro_iu>;
-            key-positions = <6 14>;
+            key-positions = <5 12>;
             layers = <1>;
             timeout-ms = <30>;
         };
 
         combo_lbrc {
             bindings = <&kp DE_LBRC>;
-            key-positions = <1 9>;
+            key-positions = <0 7>;
             timeout-ms = <30>;
             layers = <3>;
         };
 
         combo_lbrk {
             bindings = <&kp DE_LEFT_BRACKET>;
-            key-positions = <2 10>;
+            key-positions = <1 8>;
             timeout-ms = <30>;
             layers = <3>;
         };
 
         combo_lpar {
             bindings = <&kp DE_LPAR>;
-            key-positions = <3 11>;
+            key-positions = <2 9>;
             timeout-ms = <30>;
             layers = <3>;
         };
 
         combo_rpar {
             bindings = <&kp DE_RPAR>;
-            key-positions = <4 12>;
+            key-positions = <3 10>;
             timeout-ms = <30>;
             layers = <3>;
         };
 
         combo_rbrk {
             bindings = <&kp DE_RIGHT_BRACKET>;
-            key-positions = <5 13>;
+            key-positions = <13 4>;
             timeout-ms = <30>;
             layers = <3>;
         };
 
         combo_rbrc {
             bindings = <&kp DE_RBRC>;
-            key-positions = <6 14>;
+            key-positions = <5 12>;
             timeout-ms = <30>;
             layers = <3>;
         };
 
         combo_lt {
             bindings = <&kp DE_LESS_THAN>;
-            key-positions = <2 11>;
+            key-positions = <1 9>;
             timeout-ms = <30>;
             layers = <3 2>;
         };
 
         combo_gt {
             bindings = <&kp DE_GT>;
-            key-positions = <5 12>;
+            key-positions = <4 10>;
             timeout-ms = <30>;
             layers = <3 2>;
         };
 
         combo_fslsh {
             bindings = <&kp DE_FSLH>;
-            key-positions = <2 9>;
+            key-positions = <7 1>;
             timeout-ms = <30>;
             layers = <3 0 1 2>;
         };
 
         combo_bslsh {
             bindings = <&kp DE_BACKSLASH>;
-            key-positions = <5 14>;
+            key-positions = <4 12>;
             timeout-ms = <30>;
             layers = <3 0 1 2>;
         };
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <2 1>;
+            key-positions = <1 0>;
             timeout-ms = <30>;
         };
 
         combo_rtn {
             bindings = <&kp RETURN>;
-            key-positions = <3 2>;
+            key-positions = <2 1>;
             timeout-ms = <30>;
         };
 
         combo_bspc {
             bindings = <&kp BSPC>;
-            key-positions = <5 6>;
+            key-positions = <3 4>;
             timeout-ms = <30>;
             layers = <0 1 2>;
         };
@@ -193,13 +193,13 @@
 
         combo_esc {
             bindings = <&kp ESC>;
-            key-positions = <4 6 5>;
+            key-positions = <4 5 3>;
             timeout-ms = <30>;
         };
 
         combo_stdio {
             bindings = <&studio_unlock>;
-            key-positions = <9 10 11>;
+            key-positions = <9 8 7>;
             layers = <3>;
             timeout-ms = <50>;
             require-prior-idle-ms = <200>;
@@ -207,27 +207,27 @@
 
         combo_minus {
             bindings = <&kp DE_MINUS>;
-            key-positions = <12 14>;
+            key-positions = <12 10>;
             timeout-ms = <30>;
         };
 
         combo_7 {
             bindings = <&kp DE_N7>;
-            key-positions = <4 12>;
+            key-positions = <3 10>;
             layers = <4>;
             timeout-ms = <30>;
         };
 
         combo_8 {
             bindings = <&kp DE_N8>;
-            key-positions = <5 13>;
+            key-positions = <4 11>;
             layers = <4>;
             timeout-ms = <30>;
         };
 
         combo_9 {
             bindings = <&kp DE_N9>;
-            key-positions = <6 14>;
+            key-positions = <12 5>;
             layers = <4>;
             timeout-ms = <30>;
         };
@@ -241,13 +241,13 @@
 
         combo_rpt {
             bindings = <&sk LEFT_SHIFT>;
-            key-positions = <11 10>;
+            key-positions = <9 8>;
             timeout-ms = <40>;
         };
 
         xombo_repeat_r {
             bindings = <&sk LEFT_SHIFT>;
-            key-positions = <12 13>;
+            key-positions = <11 10>;
             timeout-ms = <40>;
         };
     };
@@ -380,44 +380,47 @@
 
         a1 {
             bindings = <
-                        &hml LEFT_ALT DE_L      &hml LEFT_GUI DE_N      &hml LEFT_SHIFT DE_D    &hmr LEFT_SHIFT DE_Y    &hmr LEFT_GUI DE_O      &hmr LEFT_ALT DE_U      
-&hml LCTRL DE_S         &kp DE_R                &kp DE_H                &lt_r2 4 DE_T           &lt_r2 4 DE_C           &kp DE_E                &kp DE_I                &hmr LCTRL DE_A
-                                                &sl 2                   &sl 1                   &mt LEFT_SHIFT SPACE    &sl 3
+                 &hml LEFT_ALT DE_L  &hml LEFT_GUI DE_N  &hml LEFT_SHIFT DE_D  &hmr LEFT_SHIFT DE_Y  &hmr LEFT_GUI DE_O  &hmr LEFT_ALT DE_U
+&hml LCTRL DE_S  &kp DE_R            &kp DE_H            &lt_r2 4 DE_T         &lt_r2 4 DE_C         &kp DE_E            &kp DE_I            &hmr LCTRL DE_A
+                                     &sl 2               &sl 1                 &mt LEFT_SHIFT SPACE  &sl 3
             >;
         };
 
         a2 {
             bindings = <
-                        &hml LEFT_ALT DE_X      &hml LEFT_GUI DE_B      &hml LEFT_SHIFT DE_M    &hmr LEFT_SHIFT DE_W    &hmr LEFT_GUI DE_Q      &hmr LEFT_ALT DE_COMMA  
-&hml LEFT_CONTROL DE_F  &kp DE_V                &kp DE_P                &kp DE_K                &kp DE_G                &kp DE_J                &kp DE_DOT              &hmr LEFT_CONTROL DE_Z
-                                                &trans                  &to 0                   &trans                  &trans
+                        &hml LEFT_ALT DE_X  &hml LEFT_GUI DE_B  &hml LEFT_SHIFT DE_M  &hmr LEFT_SHIFT DE_W  &hmr LEFT_GUI DE_Q  &hmr LEFT_ALT DE_COMMA
+&hml LEFT_CONTROL DE_F  &kp DE_V            &kp DE_P            &kp DE_K              &kp DE_G              &kp DE_J            &kp DE_DOT              &hmr LEFT_CONTROL DE_Z
+                                            &trans              &to 0                 &trans                &trans
             >;
+
             label = "a2";
         };
 
         nav {
             bindings = <
-                        &sk LALT                &sk LGUI                &sk LSHFT               &kp DOWN                &kp UP                  &kp RIGHT               
-&sk LCTRL               &trans                  &kp PG_UP               &trans                  &kp HOME                &kp PG_DN               &kp END                 &kp LEFT
-                                                &to 4                   &to 0                   &trans                  &to 3
+           &sk LALT  &sk LGUI   &sk LSHFT  &kp DOWN  &kp UP     &kp RIGHT
+&sk LCTRL  &trans    &kp PG_UP  &trans     &kp HOME  &kp PG_DN  &kp END    &kp LEFT
+                     &to 4      &to 0      &trans    &to 3
             >;
+
             label = "nav";
         };
 
         sym {
             bindings = <
-                        &kp DE_GRAVE            &kp DE_SQT              &kp DE_DQT              &kp DE_PIPE             &kp DE_EQUAL            &kp DE_CARET            
-&kp DE_EXCL             &kp DE_AT               &kp DE_HASH             &kp DE_DOLLAR           &kp DE_AMPERSAND        &kp DE_ASTERISK         &kp DE_PERCENT          &kp DE_BSLH
-                                                &kp DE_TILDE            &to 0                   &trans                  &trans
+             &kp DE_GRAVE  &kp DE_SQT    &kp DE_DQT     &kp DE_PIPE       &kp DE_EQUAL     &kp DE_CARET
+&kp DE_EXCL  &kp DE_AT     &kp DE_HASH   &kp DE_DOLLAR  &kp DE_AMPERSAND  &kp DE_ASTERISK  &kp DE_PERCENT  &kp DE_BSLH
+                           &kp DE_TILDE  &to 0          &trans            &trans
             >;
+
             label = "sym";
         };
 
         num {
             bindings = <
-                        &hml LEFT_ALT DE_MINUS  &hml LEFT_GUI DE_ASTRK  &kp DE_EQUAL            &kp DE_N5               &kp DE_N6               &kp DE_N0               
-&hml LCTRL DE_PLUS      &kp DE_PERCENT          &kp DE_PIPE             &kp DE_FSLH             &kp DE_N1               &kp DE_N2               &kp DE_N3               &kp DE_N4
-                                                &trans                  &to 0                   &trans                  &trans
+                    &hml LEFT_ALT DE_MINUS  &hml LEFT_GUI DE_ASTRK  &kp DE_EQUAL  &kp DE_N5  &kp DE_N6  &kp DE_N0
+&hml LCTRL DE_PLUS  &kp DE_PERCENT          &kp DE_PIPE             &kp DE_FSLH   &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_N4
+                                            &trans                  &to 0         &trans     &trans
             >;
         };
     };

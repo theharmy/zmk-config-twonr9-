@@ -2,316 +2,339 @@
 #include <dt-bindings/zmk/keys.h>
 #include "keys_de.h"
 
-
+//           ---------------------------------------------------
+//             0 | 1 | 2              3 |  4 |  5     
+//         6 | 7 | 8 | 9             10 | 11 | 12 | 13 
+//                    14 | 15   16 | 17         
+//           ---------------------------------------------------
 
 / {
     combos {
         compatible = "zmk,combos";
 
-        combo_q {
-            bindings = <&kp DE_Q>;
-            key-positions = <1 0>;
-            timeout-ms = <25>;
-            layers = <0>;
-        };
-
-        combo_v {
-            bindings = <&kp DE_V>;
-            key-positions = <2 3>;
-            timeout-ms = <25>;
-            layers = <0>;
-        };
-
-        combo_k {
-            bindings = <&kp DE_K>;
-            key-positions = <3 11>;
-            timeout-ms = <25>;
-            layers = <0>;
-        };
-
-        combo_m {
-            bindings = <&kp DE_M>;
-            key-positions = <2 10>;
-            timeout-ms = <25>;
-            layers = <0>;
-        };
-
-        combo_j {
-            bindings = <&kp DE_J>;
+        combo_rl {
+            bindings = <&macro_rl>;
             key-positions = <1 9>;
-            timeout-ms = <25>;
             layers = <0>;
+            timeout-ms = <30>;
         };
 
-        combo_z {
-            bindings = <&kp DE_Z>;
-            key-positions = <9 10>;
-            timeout-ms = <25>;
+        combo_hn {
+            bindings = <&macro_hn>;
+            key-positions = <2 10>;
             layers = <0>;
+            timeout-ms = <30>;
         };
 
-        combo_f {
-            bindings = <&kp DE_F>;
-            key-positions = <10 11>;
-            timeout-ms = <25>;
+        combo_dt {
+            bindings = <&macro_dt>;
+            key-positions = <3 11>;
             layers = <0>;
+            timeout-ms = <30>;
         };
 
-        combo_p {
-            bindings = <&kp DE_P>;
-            key-positions = <12 13>;
-            timeout-ms = <25>;
-            layers = <0>;
-        };
-
-        combo_y {
-            bindings = <&kp DE_Y>;
-            key-positions = <13 14>;
-            timeout-ms = <25>;
-            layers = <0>;
-        };
-
-        combo_g {
-            bindings = <&kp DE_G>;
+        combo_cy {
+            bindings = <&macro_cy>;
             key-positions = <4 12>;
-            timeout-ms = <25>;
             layers = <0>;
-        };
-
-        combo_comma {
-            bindings = <&kp DE_COMMA>;
-            key-positions = <7 4>;
             timeout-ms = <30>;
         };
 
-        combo_semi {
-            bindings = <&kp DE_SEMICOLON>;
-            key-positions = <7 4 5>;
+        combo_eo {
+            bindings = <&macro_eo>;
+            key-positions = <5 13>;
+            layers = <0>;
             timeout-ms = <30>;
         };
 
-        combo_colon {
-            bindings = <&kp DE_COLON>;
-            key-positions = <0 3 2>;
+        combo_ui {
+            bindings = <&macro_ui>;
+            key-positions = <6 14>;
+            layers = <0>;
             timeout-ms = <30>;
         };
 
-        combo_rbrc {
-            bindings = <&kp DE_RBRC>;
-            key-positions = <7 5 6>;
+        combo_lr {
+            bindings = <&macro_lr>;
+            key-positions = <1 9>;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+
+        combo_nb {
+            bindings = <&macro_nb>;
+            key-positions = <2 10>;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+
+        combo_mt {
+            bindings = <&macro_mt>;
+            key-positions = <3 11>;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+
+        combo_gy {
+            bindings = <&macro_gy>;
+            key-positions = <4 12>;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+
+        combo_oe {
+            bindings = <&macro_oe>;
+            key-positions = <5 13>;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+
+        combo_iu {
+            bindings = <&macro_iu>;
+            key-positions = <6 14>;
+            layers = <1>;
             timeout-ms = <30>;
         };
 
         combo_lbrc {
-            bindings = <&kp DE_LEFT_BRACE>;
-            key-positions = <0 2 1>;
+            bindings = <&kp DE_LBRC>;
+            key-positions = <1 9>;
             timeout-ms = <30>;
+            layers = <3>;
         };
 
-        combo_fslsh {
-            bindings = <&kp DE_SLASH>;
-            key-positions = <0 10>;
-            timeout-ms = <30>;
-        };
-
-        combo_bslsh {
-            bindings = <&kp DE_BSLH>;
-            key-positions = <13 7>;
-            timeout-ms = <30>;
-        };
-
-        combo_lbrkt {
+        combo_lbrk {
             bindings = <&kp DE_LEFT_BRACKET>;
-            key-positions = <2 9>;
+            key-positions = <2 10>;
             timeout-ms = <30>;
-            layers = <0>;
-        };
-
-        combo_rbrkt {
-            bindings = <&kp DE_RIGHT_BRACKET>;
-            key-positions = <5 14>;
-            timeout-ms = <30>;
-            layers = <0>;
+            layers = <3>;
         };
 
         combo_lpar {
-            bindings = <&kp DE_LEFT_PARENTHESIS>;
-            key-positions = <2 11>;
+            bindings = <&kp DE_LPAR>;
+            key-positions = <3 11>;
             timeout-ms = <30>;
-            layers = <0>;
+            layers = <3>;
         };
 
         combo_rpar {
             bindings = <&kp DE_RPAR>;
-            key-positions = <5 12>;
+            key-positions = <4 12>;
             timeout-ms = <30>;
+            layers = <3>;
+        };
+
+        combo_rbrk {
+            bindings = <&kp DE_RIGHT_BRACKET>;
+            key-positions = <5 13>;
+            timeout-ms = <30>;
+            layers = <3>;
+        };
+
+        combo_rbrc {
+            bindings = <&kp DE_RBRC>;
+            key-positions = <6 14>;
+            timeout-ms = <30>;
+            layers = <3>;
         };
 
         combo_lt {
-            bindings = <&kp DE_LT>;
-            key-positions = <11 0>;
+            bindings = <&kp DE_LESS_THAN>;
+            key-positions = <2 11>;
             timeout-ms = <30>;
-            layers = <1>;
+            layers = <3 2>;
         };
 
         combo_gt {
             bindings = <&kp DE_GT>;
-            key-positions = <12 7>;
+            key-positions = <5 12>;
             timeout-ms = <30>;
-            layers = <1>;
+            layers = <3 2>;
         };
 
-        combo_qmark {
-            bindings = <&kp DE_QUESTION>;
-            key-positions = <0 1>;
+        combo_fslsh {
+            bindings = <&kp DE_FSLH>;
+            key-positions = <2 9>;
             timeout-ms = <30>;
-            layers = <1>;
+            layers = <3 0 1 2>;
         };
 
-        combo_pipe {
-            bindings = <&kp DE_PIPE>;
-            key-positions = <1 9>;
+        combo_bslsh {
+            bindings = <&kp DE_BACKSLASH>;
+            key-positions = <5 14>;
             timeout-ms = <30>;
-            layers = <1>;
-        };
-
-        combo_caret {
-            bindings = <&kp DE_CARET>;
-            key-positions = <3 11>;
-            timeout-ms = <30>;
-            layers = <1>;
-        };
-
-        combo_seven {
-            bindings = <&kp DE_N7>;
-            key-positions = <4 12>;
-            timeout-ms = <30>;
-            layers = <1>;
-        };
-
-        combo_eight {
-            bindings = <&kp DE_N8>;
-            key-positions = <13 5>;
-            timeout-ms = <30>;
-            layers = <1>;
-        };
-
-        combo_nine {
-            bindings = <&kp DE_N9>;
-            key-positions = <6 14>;
-            timeout-ms = <30>;
-            layers = <1>;
+            layers = <3 0 1 2>;
         };
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <1 3>;
+            key-positions = <2 1>;
             timeout-ms = <30>;
-            layers = <0 2>;
         };
 
-        combo_esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <4 5 6>;
+        combo_rtn {
+            bindings = <&kp RETURN>;
+            key-positions = <3 2>;
             timeout-ms = <30>;
-            layers = <0 2>;
-        };
-
-        combo_cbspc {
-            bindings = <&kp LC(BSPC)>;
-            key-positions = <6 5>;
-            timeout-ms = <30>;
-            layers = <0>;
         };
 
         combo_bspc {
             bindings = <&kp BSPC>;
-            key-positions = <5 4>;
-            timeout-ms = <30>;
-            layers = <0>;
-        };
-
-        combo_enter {
-            bindings = <&kp ENTER>;
-            key-positions = <1 3 2>;
-            timeout-ms = <30>;
-            layers = <0>;
-        };
-
-        combo_dollar {
-            bindings = <&kp DE_DOLLAR>;
-            key-positions = <2 10>;
-            timeout-ms = <30>;
-            layers = <1>;
-        };
-
-        combo_excl {
-            bindings = <&kp DE_EXCLAMATION>;
-            key-positions = <7 6>;
-            timeout-ms = <30>;
-            layers = <1>;
-        };
-
-        combo_sqt {
-            bindings = <&kp DE_SQT>;
-            key-positions = <4 5>;
-            timeout-ms = <30>;
-            layers = <1>;
-        };
-
-        combo_dqt {
-            bindings = <&kp DE_DOUBLE_QUOTES>;
             key-positions = <5 6>;
             timeout-ms = <30>;
-            layers = <1>;
+            layers = <0 1 2>;
         };
 
-        combo_dot {
-            bindings = <&kp DE_DOT>;
-            key-positions = <3 0>;
+        combo_cbspc {
+            bindings = <&kp LC(BSPC)>;
+            key-positions = <4 5>;
             timeout-ms = <30>;
         };
 
-        combo_under {
-            bindings = <&kp DE_UNDERSCORE>;
-            key-positions = <0 11>;
+        combo_esc {
+            bindings = <&kp ESC>;
+            key-positions = <4 6 5>;
             timeout-ms = <30>;
-            layers = <0 1>;
-        };
-
-        combo_minus {
-            bindings = <&kp DE_MINUS>;
-            key-positions = <12 7>;
-            timeout-ms = <30>;
-            layers = <0 1>;
-        };
-
-        combo_pgdn {
-            bindings = <&kp PAGE_DOWN>;
-            key-positions = <5 13>;
-            timeout-ms = <30>;
-            layers = <2>;
-        };
-
-        combo_pgup {
-            bindings = <&kp PG_UP>;
-            key-positions = <6 14>;
-            timeout-ms = <30>;
-            layers = <2>;
         };
 
         combo_stdio {
             bindings = <&studio_unlock>;
-            key-positions = <9 10 0>;
-            layers = <2>;
-            require-prior-idle-ms = <150>;
+            key-positions = <9 10 11>;
+            layers = <3>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <200>;
         };
 
-        combo_x {
-            bindings = <&kp DE_X>;
-            key-positions = <9 0>;
-            timeout-ms = <25>;
-            layers = <0>;
+        combo_minus {
+            bindings = <&kp DE_MINUS>;
+            key-positions = <12 14>;
+            timeout-ms = <30>;
+        };
+
+        combo_7 {
+            bindings = <&kp DE_N7>;
+            key-positions = <4 12>;
+            layers = <4>;
+            timeout-ms = <30>;
+        };
+
+        combo_8 {
+            bindings = <&kp DE_N8>;
+            key-positions = <5 13>;
+            layers = <4>;
+            timeout-ms = <30>;
+        };
+
+        combo_9 {
+            bindings = <&kp DE_N9>;
+            key-positions = <6 14>;
+            layers = <4>;
+            timeout-ms = <30>;
+        };
+
+        combo_question {
+            bindings = <&kp DE_QMARK>;
+            key-positions = <0 1>;
+            timeout-ms = <30>;
+            layers = <3>;
+        };
+
+        combo_rpt {
+            bindings = <&sk LEFT_SHIFT>;
+            key-positions = <11 10>;
+            timeout-ms = <40>;
+        };
+
+        xombo_repeat_r {
+            bindings = <&sk LEFT_SHIFT>;
+            key-positions = <12 13>;
+            timeout-ms = <40>;
+        };
+    };
+
+    macros {
+        macro_rl: macro_rl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_R &kp DE_L>;
+            label = "MACRO_RL";
+        };
+
+        macro_hn: hn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_H &kp DE_N>;
+            label = "HN";
+        };
+
+        macro_dt: dt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_D &kp DE_T>;
+            label = "DT";
+        };
+
+        macro_cy: cy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_C &kp DE_Y>;
+            label = "CY";
+        };
+
+        macro_eo: eo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_E &kp DE_O>;
+            label = "EO";
+        };
+
+        macro_ui: ui {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_U &kp DE_I>;
+            label = "UI";
+        };
+
+        macro_lr: lr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_L &kp DE_R>;
+            label = "LR";
+        };
+
+        macro_nb: nb {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_N &kp DE_B>;
+            label = "NB";
+        };
+
+        macro_mt: mt_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_M &kp DE_T>;
+            label = "MT_MACRO";
+        };
+
+        macro_gy: gy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_G &kp DE_Y>;
+            label = "GY";
+        };
+
+        macro_oe: oe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_O &kp DE_E>;
+            label = "OE";
+        };
+
+        macro_iu: iu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_I &kp DE_U>;
+            label = "IU";
         };
     };
 
@@ -322,11 +345,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            flavor = "balanced";
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <15 18 19 4 5 6 7 12 13 14 15>;
+            hold-trigger-key-positions = <4 5 6 7 12 13 14 15 19 18>;
             tapping-term-ms = <150>;
-            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            flavor = "balanced";
         };
 
         hmr: hmr {
@@ -335,14 +357,24 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            flavor = "balanced";
-            hold-trigger-on-release;
             tapping-term-ms = <150>;
-            require-prior-idle-ms = <150>;
-            hold-trigger-key-positions = <0 1 2 3 8 9 10 11 16 17>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 3 8 9 10 11 16 17 2 1>;
+            flavor = "balanced";
+        };
+
+        lt_r2: lt_r2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_R2";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            require-prior-idle-ms = <50>;
+            tapping-term-ms = <150>;
         };
     };
-    
+
     keymap {
         compatible = "zmk,keymap";
 

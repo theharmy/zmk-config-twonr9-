@@ -214,21 +214,21 @@
         combo_7 {
             bindings = <&kp DE_N7>;
             key-positions = <3 10>;
-            layers = <4>;
+            layers = <5>;
             timeout-ms = <30>;
         };
 
         combo_8 {
             bindings = <&kp DE_N8>;
             key-positions = <4 11>;
-            layers = <4>;
+            layers = <5>;
             timeout-ms = <30>;
         };
 
         combo_9 {
             bindings = <&kp DE_N9>;
             key-positions = <12 5>;
-            layers = <4>;
+            layers = <5>;
             timeout-ms = <30>;
         };
 
@@ -363,9 +363,9 @@
             flavor = "balanced";
         };
 
-        lt_r2: lt_r2 {
+        lt_r4: lt_r4 {
             compatible = "zmk,behavior-hold-tap";
-            label = "LT_R2";
+            label = "LT_R4";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
@@ -381,8 +381,8 @@
         a1 {
             bindings = <
                  &hml LEFT_ALT DE_L  &hml LEFT_GUI DE_N  &hml LEFT_SHIFT DE_D  &hmr LEFT_SHIFT DE_Y  &hmr LEFT_GUI DE_O  &hmr LEFT_ALT DE_U
-&hml LCTRL DE_S  &kp DE_R            &kp DE_H            &lt_r2 4 DE_T         &lt_r2 4 DE_C         &kp DE_E            &kp DE_I            &hmr LCTRL DE_A
-                                     &sl 2               &sl 1                 &mt LEFT_SHIFT SPACE  &sl 3
+&hml LCTRL DE_S  &lt_r4 4 DE_R       &lt_r4 3 DE_H       &lt_r4 5 DE_T         &lt_r4 5 DE_C         &lt_r4 3 DE_E       &lt_r4 4 DE_I       &hmr LCTRL DE_A
+                                     &sl 2               &sl 1                 &mt LEFT_SHIFT SPACE  &sl 5
             >;
         };
 
@@ -400,7 +400,7 @@
             bindings = <
            &sk LALT  &sk LGUI   &sk LSHFT  &kp DOWN  &kp UP     &kp RIGHT
 &sk LCTRL  &trans    &kp PG_UP  &trans     &kp HOME  &kp PG_DN  &kp END    &kp LEFT
-                     &to 4      &to 0      &trans    &to 3
+                     &trans     &to 0      &trans    &trans
             >;
 
             label = "nav";
@@ -408,12 +408,21 @@
 
         sym {
             bindings = <
-             &kp DE_GRAVE  &kp DE_SQT    &kp DE_DQT     &kp DE_PIPE       &kp DE_EQUAL     &kp DE_CARET
-&kp DE_EXCL  &kp DE_AT     &kp DE_HASH   &kp DE_DOLLAR  &kp DE_AMPERSAND  &kp DE_ASTERISK  &kp DE_PERCENT  &kp DE_BSLH
-                           &kp DE_TILDE  &to 0          &trans            &trans
+              &kp DE_EURO   &kp DE_HASH   &kp DE_DOLLAR  &kp DE_LT            &kp DE_GT             &kp DE_CARET
+&kp DE_GRAVE  &kp DE_TILDE  &kp DE_MINUS  &kp BSLH       &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET  &kp DE_PIPE   &kp DE_FSLH
+                            &trans        &to 0          &trans               &trans
             >;
 
             label = "sym";
+        };
+
+        sym2 {
+            label = "Sym2";
+            bindings = <
+              &kp DE_AT     &kp DE_SQT   &kp DE_DQT       &kp DE_LPAR        &kp DE_RPAR         &kp DE_COLON
+&kp DE_ASTRK  &kp DE_TILDE  &kp DE_EXCL  &kp DE_QUESTION  &kp DE_LEFT_BRACE  &kp DE_RIGHT_BRACE  &kp DE_SEMICOLON  &kp DE_AMPERSAND
+                            &trans       &to 0            &trans             &trans
+            >;
         };
 
         num {

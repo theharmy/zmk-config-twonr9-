@@ -358,7 +358,7 @@
         //     bindings = <&kp>, <&kp>;
         //     hold-trigger-key-positions = <0 3 8 9 10 11 16 17 2 1>;
         //     hold-trigger-on-release;
-        )
+        // )
 
     behaviors {
         hml: hml {

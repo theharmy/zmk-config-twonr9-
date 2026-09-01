@@ -10,6 +10,8 @@ manifest:
       url-base: https://github.com/zzeneg
     - name: srwi # <-- required for KeyPeek module
       url-base: https://github.com/srwi
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -20,5 +22,8 @@ manifest:
     - name: zmk-keypeek-layer-notifier # <-- KeyPeek module
       remote: srwi
       revision: master
+    - name: zmk-helpers
+      remote: urob
+      revision: v0.3
   self:
     path: config
